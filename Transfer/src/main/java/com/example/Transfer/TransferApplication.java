@@ -1,5 +1,6 @@
 package com.example.Transfer;
 
+import com.example.Transfer.DTO.TransferDTO;
 import jakarta.validation.ConstraintViolation;
 import jakarta.validation.Validation;
 import jakarta.validation.Validator;
@@ -15,7 +16,7 @@ public class TransferApplication {
 
 	public static void main(String[] args) {
 
-		//SpringApplication.run(TransferApplication.class, args);
+		SpringApplication.run(TransferApplication.class, args);
 		TransferDTO dto = new TransferDTO();
 
 		dto.setFirstName("Gabriela");

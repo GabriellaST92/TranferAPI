@@ -20,12 +20,13 @@ public class HeaderFilter implements Filter {
        throws IOException, ServletException {
        HttpServletRequest httpServletRequest = (HttpServletRequest)  request;
         Enumeration<String> headers = httpServletRequest.getHeaderNames();
+        System.out.println("Request headers-----------------------------------------");
         while(headers.hasMoreElements()){
             String header = headers.nextElement();
             String value = httpServletRequest.getHeader(header);
             System.out.println(header + " : "+ value);
         }
-
+        System.out.println("---------------------------------------------------------");
         chain.doFilter(request, response);
 
    }

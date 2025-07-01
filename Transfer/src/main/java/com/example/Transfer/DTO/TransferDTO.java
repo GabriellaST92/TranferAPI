@@ -1,9 +1,5 @@
-package com.example.Transfer;
+package com.example.Transfer.DTO;
 
-import jakarta.validation.Validation;
-import jakarta.validation.Validator;
-import jakarta.validation.ValidatorFactory;
-import jakarta.validation.ConstraintViolation;
 import jakarta.validation.constraints.*;
 
 import java.math.BigDecimal;
